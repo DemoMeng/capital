@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<constant name="struts.objectFactory" value="spring" />
+
+	<package name="mypck001" extends="struts-default">
+	
+	
+	
+	
+		<action name="OrderAction_*" class="orderAction" method="{1}">
+
+			<result name="success">/WEB-INF/jsp/index.jsp</result>
+
+		</action>
+		
+	
+	</package>
+	
+
+</struts>
